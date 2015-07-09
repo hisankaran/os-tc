@@ -1,0 +1,43 @@
+body {
+    background: #eeeeee;
+    font-family: 'Muli', sans-serif;
+}
+
+#app {
+}
+
+.items-list {
+    display: table;
+    margin: 0 auto;
+}
+
+.items-list .item-wrapper {
+    background: #ffffff;
+    width: 200px;
+    margin: 10px 5px;
+    -moz-box-shadow: 4px 4px 5px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 4px 4px 5px rgba(0, 0, 0, .5);
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, .5);
+}
+
+.item-wrapper .item-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 0px;
+}
+
+.item-wrapper .item-details {
+    background: #333333;
+    padding: 5px;
+    font-size: 0.8em;
+}
+
+.item-wrapper .item-name {
+    text-overflow: ellipsis;
+    color: #ffffff;
+}
+
+.item-wrapper .item-company {
+    color: #ffffff;
+}

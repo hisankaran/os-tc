@@ -1,0 +1,11 @@
+{
+  "port": "",
+  "database": {
+    "type": "mysql",
+    "server": "localhost",
+    "username": "",
+    "password": "",
+    "name": "",
+    "logging": false
+  }
+}

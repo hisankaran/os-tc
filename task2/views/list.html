@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Frontend Result</title>
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Muli:300' rel='stylesheet' type='text/css'>
+    <link href="styles.css" rel="stylesheet" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script type="text/javascript" src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container">
+    <a href="/logout" class="pull-right">Logout</a>
+</div>
+<div id="app" class="container">Loading data...</div>
+{{=<% %>=}}
+<script id="template" type="x-tmpl-mustache">
+    <ul class="list-unstyled list-inline items-list">
+    {{#items}}
+        <li>
+            <div class="item-wrapper">
+                <img src="{{ OSS.Image }}" class="item-image" />
+                <div class="item-details">
+                    <div class="item-name">{{ OSS.Name }}</div>
+                    <div class="item-company">from {{ OSS.Company }}</div>
+                </div>
+            </div>
+    {{/items}}
+    {{^items}}No data found...{{/items}}
+    </ul>
+</script>
+<%={{ }}=%>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.2/mustache.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+
+</body>
+</html>
